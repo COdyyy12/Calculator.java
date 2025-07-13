@@ -11,7 +11,7 @@ public class Calculator {
 }
    public static String extractDecimal(String number) {
         int a = number.indexOf('.');
-        if(a<=0||a==number.length()-1){
+        if(a<0||a==number.length()-1){
          return "";
     }
         return number.substring(a + 1);
